@@ -1,7 +1,7 @@
 package becas;
 
 public class Helpers {
-    public static boolean applicaBeca(String studentCode){
+    public static boolean applicaBeca(String ci){
         return false;
     }
 

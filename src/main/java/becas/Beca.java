@@ -10,11 +10,11 @@ public class Beca {
         this.utils = utils;
     }
 
-    public String recomendacionBeca(String studentCode){
-        if (Helpers.applicaBeca(studentCode)){
+    public String recomendacionBeca(String ci){
+        if (Helpers.applicaBeca(ci)){
             msg = "EL ESTUDIANTE NO CURSO AUN EL 60% DE LAS MATERIAS";
         }else{
-            if(utils.getNota(studentCode)>=90){
+            if(utils.getNota(ci)>=90){
                 msg = "SI APLICA A BECA";
             }else{
                 msg = "NO APLICA A BECA POR PROMEDIO ACADEMICO";
